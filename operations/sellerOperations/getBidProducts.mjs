@@ -17,11 +17,11 @@ export async function operation(req , res){
                        for(let i in result2){
                         console.log(result[i])
 
-                        if(product_ids.includes(result2[i].prodcut_id)){
+                        if(product_ids.includes(result2[i].product_id)){
     
                             const index = result.findIndex(object => {
                                 console.log(object)
-                                return object.product_id === result2[i].prodcut_id;
+                                return object.product_id === result2[i].product_id;
                               });
                               console.log(index)
                             let res = {

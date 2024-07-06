@@ -6,7 +6,7 @@ connection.query("CREATE TABLE product (product_id INT AUTO_INCREMENT PRIMARY KE
   console.log(result);
 });
 
-connection.query("CREATE TABLE bid_product (prodcut_id INT PRIMARY KEY,  status VARCHAR(255), base_price INT , end_time TIME , winner_id INT)", function (err, result, fields) {
+connection.query("CREATE TABLE bid_product (product_id INT PRIMARY KEY,  status VARCHAR(255), base_price INT , end_time TIME , winner_id INT)", function (err, result, fields) {
   if (err) throw err;
   console.log(result);
 });

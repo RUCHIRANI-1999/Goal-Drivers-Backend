@@ -17,7 +17,7 @@ export async function operation(req , res){
         if (err) res.send(err);
         else{
             var current_time = format(new Date)
-            var sql = "INSERT INTO bid_product (prodcut_id , status, base_price ,end_time) " + "VALUES ("+result.insertId+",'ongoing',"+req.body.base_price+",'"+current_time+"')"
+            var sql = "INSERT INTO bid_product (product_id , status, base_price ,end_time) " + "VALUES ("+result.insertId+",'ongoing',"+req.body.base_price+",'"+current_time+"')"
             connection.query(sql, function (err, result2, fields) {
                 if (err) res.send(err);
                 else{

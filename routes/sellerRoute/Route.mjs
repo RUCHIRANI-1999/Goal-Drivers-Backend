@@ -30,7 +30,7 @@ router.put('/update_product/:product_id' ,(req,res,next)=>{
     updateProduct(req,res)
 })
 
-router.delete('/remove_product/:prodcut_id' ,(req,res,next)=>{
+router.delete('/remove_product/:product_id' ,(req,res,next)=>{
     deleteProduct(req,res)
 })
 
